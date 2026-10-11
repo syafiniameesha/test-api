@@ -1,4 +1,4 @@
-module student-api
+module test-api
 
 go 1.26.1
 

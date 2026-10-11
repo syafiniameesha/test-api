@@ -1,15 +1,14 @@
 package router
 
 import (
-	"student-api/src/controllers"
+	"test-api/src/controllers"
 
 	"github.com/gin-gonic/gin"
 )
 
 func InitRouter(r *gin.Engine) {
-	studentbe := r.Group("student/be")
+	testbe := r.Group("/test")
 
-	// user
-	studentbe.POST("/test/list", controllers.TestCtrl.TestList)
-
+	testbe.POST("/create", controllers.TestCtrl.TestCreate)
+	testbe.POST("/list", controllers.TestCtrl.TestList)
 }
