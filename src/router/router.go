@@ -11,4 +11,6 @@ func InitRouter(r *gin.Engine) {
 
 	testbe.POST("/create", controllers.TestCtrl.TestCreate)
 	testbe.POST("/list", controllers.TestCtrl.TestList)
+	testbe.POST("/update", controllers.TestCtrl.TestUpdate)
+	testbe.POST("/delete", controllers.TestCtrl.TestDelete)
 }
